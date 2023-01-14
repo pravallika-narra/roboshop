@@ -19,4 +19,4 @@ systemctl start catalogue
 
 cp ${sp}/files/mongodb.repo  /etc/yum.repos.d/mongo.repo
 yum install mongodb-org-shell -y
-mongo --host mongodb-dev.devops-b70.online </app/schema/catalogue.js
+mongo --host mongodb-dev.devopsb70.online </app/schema/catalogue.js
