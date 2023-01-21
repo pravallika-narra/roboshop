@@ -9,3 +9,5 @@ status_check(){
   fi
 
 }
+
+echo"s"
