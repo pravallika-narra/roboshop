@@ -1,2 +1,3 @@
 component=cart
+schema_load=false
 NODEJSex
