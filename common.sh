@@ -1,14 +1,6 @@
 sp=$(pwd)
 
-status_check(){
-  if[$? -ne 0]; then
-    echo "SUCCESS"
-  else
-    echo "FAILED"
-    exit
-  fi
 
-}
 
 NODEJSex(){
   sp=$(pwd)
