@@ -22,8 +22,8 @@ NODEJSex(){
   systemctl enable ${component}
   systemctl start ${component}
 
-if[${schema_load} =="true"]
-then
+if [ ${schema_load} =="true" ]; then
+
   cp ${sp}/files/mongodb.repo  /etc/yum.repos.d/mongo.repo
   yum install mongodb-org-shell -y
   mongo --host mongodb-dev.devops-b70.online </app/schema/${component}.js
