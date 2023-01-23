@@ -1,3 +1,4 @@
+sp=$(pwd)
 yum install maven -y
 useradd roboshop
 mkdir -p /app
