@@ -1,6 +1,6 @@
 yum install maven -y
 useradd roboshop
-mkdir /app
+mkdir -p /app
 curl -L -o /tmp/shipping.zip https://roboshop-artifacts.s3.amazonaws.com/shipping.zip
 cd /app
 unzip /tmp/shipping.zip
@@ -13,4 +13,4 @@ systemctl enable shipping
 systemctl start shipping
 labauto mysql-client
 
-  mysql -h mongodb-dev.devops-b70.online -uroot -pRoboShop@1 < /app/schema/shipping.sql
+  mysql -h mysql-dev.devops-b70.online -uroot -pRoboShop@1 < /app/schema/shipping.sql
